@@ -1,0 +1,168 @@
+*
+{
+  margin: auto;
+}
+
+@font-face {
+    font-family: 'Oxanium';
+    src: url('fonts/Oxanium-Light.ttf');
+}
+
+@font-face {
+font-family: 'Raleway';
+src: url('fonts/Raleway-SemiBold.ttf'); /* IE9 Compat Modes */
+ }
+
+
+#presentation
+{
+  text-align: center;
+  font-family: 'Oxanium', Arial;
+
+}
+
+h1
+{
+  font-size: 2.5vw;
+}
+
+#content
+{
+  padding-left: 2%;
+}
+
+.question
+{
+  font-size: 2vw;
+  font-family: 'Oxanium', Arial;
+    text-shadow: 1px 1px 	#000000
+}
+
+.answer, .avatar
+{
+  font-size: 1vw;
+}
+/* FOOTER */
+
+strong
+{
+  font-size: 1.3em;
+  text-shadow: 1px 1px 	#C0C0C0
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .detail {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .question {
+    font-size: 20px;
+  }
+  .answer, .avatar {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  #contacts
+  {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: auto;
+    list-style-type: none;
+
+  }
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+  #presentation
+  {
+      background-color: blue;
+      padding-top: 27vh;
+      padding-bottom: 27vh;
+      color: lightgrey;
+  }
+
+  .avatar
+  {
+    font-size: 3vh;
+    font-style: italic;
+  }
+  #content
+  {
+      display: flex;
+      flex-direction: column;
+      background: url("skyR.png") repeat;
+      padding-bottom: 22.4vh;
+      padding-top: 22.4vh
+  }
+
+  .subdiv
+  {
+    padding-bottom: 10%;
+  }
+
+  .question
+  {
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    letter-spacing: 2px;
+  }
+
+  .answer
+  {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    font-family: 'Raleway', Arial;
+  }
+
+  #contacts
+  {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  #contacts li
+  {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Oxanium', Arial;
+  }
+
+  a
+  {
+    color:white;
+    text-decoration: none
+  }
+  footer
+  {
+    background-color: red;
+    padding-top: 32vh;
+    padding-bottom: 32vh;
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+  }
+}
